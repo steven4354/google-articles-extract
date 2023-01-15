@@ -1,6 +1,7 @@
 FROM python:3.8
-COPY script.py /app/
-RUN pip install requests bs4
+COPY . /app/
+RUN pip install requests bs4 nltk serpapi
 WORKDIR /app
-CMD ["python", "script.py"]
+RUN chmod +x run.sh
+ENTRYPOINT ["sh", "/app/run.sh"]
 VOLUME /app
