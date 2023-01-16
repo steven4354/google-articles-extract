@@ -6,3 +6,7 @@ source .env \
 ```
 
 logs should show up if you use python print
+
+---
+
+the rest of the cosine similarity code was completed here: https://github.com/steven4354/pinecone_cosine_test
